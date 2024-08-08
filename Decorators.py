@@ -1,5 +1,5 @@
 # function return function
-
+from functools import wraps
 # def text(tx):
 #     return tx.upper()
 
@@ -28,13 +28,32 @@
 
 # add_13 it is a variable/ object create for create_adder
 
-def create_adder (x):
-    def adder (y):
-        return x+y
-    return adder
 
-add_13 = create_adder (15)
+# show("sachit")
 
-print ( add_13 (10))
+
+# def create_adder (x):
+#     def adder (y):
+#         return x+y
+#     return adder
+
+# add_13 = create_adder (15)
+
+# print ( add_13 (10))
+
+
+def repeat(n) : 
+     
+     def decorators1(func) :
+          def Wrapper (*args ,**kwargs) :
+               for _ in range (n) :
+                   func (*args,**kwargs)
+          return Wrapper
+     return decorators1
+
+@repeat(4)
+def show (name) :
+     print(f"Hello {name}")
+
 
 

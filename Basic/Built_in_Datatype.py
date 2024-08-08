@@ -112,7 +112,6 @@ print (dic1)
 # tuples inside the list
 
 list2=[]
-t= ()
 n = int (input("enter the size of tuple :"))
 
 for i in range (0,n):

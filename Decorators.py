@@ -42,18 +42,18 @@ from functools import wraps
 # print ( add_13 (10))
 
 
-def repeat(n) : 
+# def repeat(n) : 
      
-     def decorators1(func) :
-          def Wrapper (*args ,**kwargs) :
-               for _ in range (n) :
-                   func (*args,**kwargs)
-          return Wrapper
-     return decorators1
+#      def decorators1(func) :
+#           def Wrapper (*args ,**kwargs) :
+#                for _ in range (n) :
+#                    func (*args,**kwargs)
+#           return Wrapper
+#      return decorators1
 
-@repeat(4)
-def show (name) :
-     print(f"Hello {name}")
+# @repeat(4)
+# def show (name) :
+#      print(f"Hello {name}")
 
 
 

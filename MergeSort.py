@@ -8,7 +8,7 @@ def merge1 (arr , low , mid , high ) :
 
     for i in range (n1) :
         
-        l[i] = arr [low +i] 
+        l[i] = arr[low +i] 
 
     for i in range (n2) :
          

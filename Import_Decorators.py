@@ -10,7 +10,7 @@ class UseDecorator :
       @DecoratorsClass.Print
       def jj (self):
       
-       print ("Hello from Use of decorators class.") 
+       print("Hello from Use of decorators class.") 
 
 obj = UseDecorator()
 

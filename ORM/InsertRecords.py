@@ -7,8 +7,8 @@ try  :
 
     insert_query="""INSERT INTO student (id , name , city) values (%s,%s,%s)"""
 
-    values = [ (1, 'sachit', 'Lalitpur') , ( 2 ,'Bittoo', 'Jhansi') , (3 , 'kapil' , 'Indore')]
-
+    values = [ (2, 'sachit', 'Lalitpur') , ( 2 ,'Bittoo', 'Jhansi') , (3 , 'kapil' , 'Indore')]
+   
     for i in values :
        cursor.execute(insert_query ,i )
 

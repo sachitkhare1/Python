@@ -5,7 +5,6 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-
 class Person(Base):
     __tablename__ = 'person'
 

@@ -1,0 +1,15 @@
+docker build -t <docekrimage name> .  ----build image
+docker ps --- show ruuning image container
+docker run -dp 127.0.0.1:3000:3000 getting-started ---- for run the image and -d flag 
+is used for detech and -p is flag
+used for mapping port of local and container ports.
+
+docker stop <container ID> its the container(running image ) then we can remove the image
+docker rm <container ID>
+docker rm -f <container ID>
+docker rm -f $(docker ps -aq) -----------this command remove all container (images)
+
+=== if you are using diffrent platform then you can use this command
+
+docker build --platform linux/amd64 -t YOUR-USER-NAME/getting-started .
+

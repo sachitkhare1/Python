@@ -7,9 +7,10 @@ used for mapping port of local and container ports.
 docker stop <container ID> its the container(running image ) then we can remove the image
 docker rm <container ID>
 docker rm -f <container ID>
+docker rmi <Image>-----To remove image 
 docker rm -f $(docker ps -aq) -----------this command remove all container (images)
 
-=== if you are using diffrent platform then you can use this command
+=== if you are using diffrent platform then you can use this command.
 
-docker build --platform linux/amd64 -t YOUR-USER-NAME/getting-started .
+docker build --platform linux/amd64 -t YOUR-USER-NAME/getting-started.
 

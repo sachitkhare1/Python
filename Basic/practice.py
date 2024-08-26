@@ -1,6 +1,6 @@
 # converting the 2 lists into dictionary
 tup = (1,2,3,4,5,6)
-
+print(tup)
 list2 = [ 9,8,7,6,5,4]
 
 dic1 = {}
